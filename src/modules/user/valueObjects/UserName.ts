@@ -7,7 +7,7 @@ export interface UserNameProps {
   name: string;
 }
 
-export class UserName extends ValueObject<UserNameProps> {
+export default class UserName extends ValueObject<UserNameProps> {
   public static maxLength: number = 15;
   public static minLength: number = 2;
 

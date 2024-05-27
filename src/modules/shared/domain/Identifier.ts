@@ -1,7 +1,5 @@
 export default class Identifier<T> {
-  constructor(private readonly value: T) {
-    this.value = value;
-  }
+  constructor(private readonly value: T) {}
 
   equals(id?: Identifier<T>): boolean {
     if (id === null || id === undefined) {

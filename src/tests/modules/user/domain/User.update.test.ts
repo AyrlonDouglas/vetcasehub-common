@@ -1,6 +1,6 @@
-import { USER_STATUS, type UserDomainProps } from "../User.types";
-import User from "../User";
-import UserEmail from "../../valueObjects/UserEmail";
+import { USER_STATUS, type UserDomainProps } from "@/modules/user/domain/User.types";
+import User from "@/modules/user/domain/User";
+import UserEmail from "@/modules/user/valueObjects/UserEmail";
 
 const makeSut = () => {
   const propsToCreateValid = User.prepareToCreate({

@@ -1,7 +1,7 @@
-import { UserName, type UserNameProps } from "../UserName";
+import UserName, { type UserNameProps } from "@/modules/user/valueObjects/UserName";
 import { type Either } from "@/modules/shared/core/either";
 import { type GuardResponseError } from "@/modules/shared/core/Guard";
-import InvalidUserNameError from "../../errors/InvalidUserName";
+import InvalidUserNameError from "@/modules/user/errors/InvalidUserName";
 
 const makeSut = (): { sut: (props: UserNameProps) => Either<GuardResponseError, string> } => {
   const sut = (props: UserNameProps): Either<GuardResponseError, string> => UserName.validate(props);

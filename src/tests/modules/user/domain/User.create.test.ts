@@ -1,7 +1,7 @@
-import { USER_STATUS, type UserDomainProps } from "../User.types";
+import { USER_STATUS, type UserDomainProps } from "@/modules/user/domain/User.types";
 import { GuardResponseError } from "@/modules/shared/core/Guard";
 import UniqueEntityID from "@/modules/shared/domain/UniqueEntityID";
-import User from "../User";
+import User from "@/modules/user/domain/User";
 
 const makeSut = () => {
   const validProps = User.prepareToCreate({

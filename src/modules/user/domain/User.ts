@@ -5,7 +5,7 @@ import { Entity } from "@/modules/shared/domain/Entity";
 import type InvalidEmailError from "../errors/InvalidEmail";
 import type UniqueEntityID from "@/modules/shared/domain/UniqueEntityID";
 import UserEmail from "../valueObjects/UserEmail";
-import { UserName } from "../valueObjects/UserName";
+import UserName from "../valueObjects/UserName";
 
 export default class User extends Entity<UserDomainProps> {
   private constructor(props: UserDomainProps, id?: UniqueEntityID) {

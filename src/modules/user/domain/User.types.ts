@@ -1,5 +1,5 @@
 import type UserEmail from "../valueObjects/UserEmail";
-import { type UserName } from "../valueObjects/UserName";
+import type UserName from "../valueObjects/UserName";
 
 export interface UserDomainProps {
   email: UserEmail;

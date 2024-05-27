@@ -1,11 +1,11 @@
-import { USER_STATUS, type UserDomainProps, type UserPrepareToCreateProps } from "../User.types";
+import { USER_STATUS, type UserDomainProps, type UserPrepareToCreateProps } from "@/modules/user/domain/User.types";
 import { type Either } from "@/modules/shared/core/either";
 import { GuardResponseError } from "@/modules/shared/core/Guard";
-import InvalidEmailError from "../../errors/InvalidEmail";
-import InvalidUserNameError from "../../errors/InvalidUserName";
-import User from "../User";
-import UserEmail from "../../valueObjects/UserEmail";
-import { UserName } from "../../valueObjects/UserName";
+import InvalidEmailError from "@/modules/user/errors/InvalidEmail";
+import InvalidUserNameError from "@/modules/user/errors/InvalidUserName";
+import User from "@/modules/user/domain/User";
+import UserEmail from "@/modules/user/valueObjects/UserEmail";
+import UserName from "@/modules/user/valueObjects/UserName";
 
 const makeSut = (): {
   sut: (props: UserPrepareToCreateProps) => Either<InvalidEmailError | GuardResponseError, UserDomainProps>;
